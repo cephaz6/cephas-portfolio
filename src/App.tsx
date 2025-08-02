@@ -3,6 +3,7 @@ import AboutSection from "./components/AboutSection";
 import HeroSection from "./components/Hero";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/SkillsSection";
+import Navigation from "./components/Navigation";
 // import ContactSection from "./components/contactSection";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       }`}
     >
       {/* Navigation - uncomment when ready */}
-      {/* <Navigation /> */}
+      <Navigation />
 
       <main className="w-full relative">
         {/* Home Section */}
