@@ -3,7 +3,7 @@ import AboutSection from "./components/AboutSection";
 import HeroSection from "./components/Hero";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/SkillsSection";
-import ContactSection from "./components/contactSection";
+// import ContactSection from "./components/contactSection";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -45,9 +45,9 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="w-full relative scroll-mt-20">
+        {/* <section id="contact" className="w-full relative scroll-mt-20">
           <ContactSection />
-        </section>
+        </section> */}
       </main>
 
       {/* Enhanced Footer */}
