@@ -24,7 +24,7 @@ function App() {
       {/* Navigation - uncomment when ready */}
       <Navigation />
 
-      <main className="w-full relative mt-5">
+      <main className="w-full relative py-5">
         {/* Home Section */}
         <section id="home" className="w-full relative">
           <HeroSection />
