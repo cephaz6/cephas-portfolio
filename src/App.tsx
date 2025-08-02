@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import AboutSection from "./components/AboutSection";
-import ContactSection from "./components/contactSection";
 import HeroSection from "./components/Hero";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/SkillsSection";
+import ContactSection from "./components/contactSection";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
