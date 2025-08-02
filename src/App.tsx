@@ -17,14 +17,14 @@ function App() {
 
   return (
     <div
-      className={`font-base w-full min-h-screen transition-opacity duration-1000 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800  ${
+      className={`font-base w-full min-h-screen transition-opacity duration-1000 bg-gradient-to-br  ${
         isLoaded ? "opacity-100" : "opacity-0"
       }`}
     >
       {/* Navigation - uncomment when ready */}
       <Navigation />
 
-      <main className="w-full relative">
+      <main className="w-full relative mt-5">
         {/* Home Section */}
         <section id="home" className="w-full relative">
           <HeroSection />
