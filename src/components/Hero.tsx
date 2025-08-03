@@ -8,6 +8,7 @@ import {
   Terminal,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import logo from "../assets/cephas.jpg";
 
 const HeroSection = () => {
   const [currentTech, setCurrentTech] = useState(0);
@@ -211,9 +212,12 @@ const HeroSection = () => {
                   <div className="absolute inset-2 bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-3xl overflow-hidden border border-emerald-500/20">
                     {/* Profile Image Placeholder */}
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 relative">
-                      <div className="w-32 h-32 bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-600 rounded-full flex items-center justify-center text-black text-4xl font-bold">
-                        OC
-                      </div>
+                      <img
+                        className="w-fit rounded-2xl"
+                        src={logo}
+                        alt=""
+                        srcSet=""
+                      />
 
                       {/* Overlay Effects */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -224,7 +228,7 @@ const HeroSection = () => {
                       React
                     </div>
                     <div className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-sm px-3 py-2 rounded-lg text-teal-400 text-sm border border-teal-500/30 animate-bounce delay-300">
-                      Node.js
+                      FastAPI
                     </div>
                     <div className="absolute top-1/2 left-6 bg-black/80 backdrop-blur-sm px-3 py-2 rounded-lg text-cyan-400 text-sm border border-cyan-500/30 animate-bounce delay-700">
                       AWS
