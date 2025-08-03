@@ -24,6 +24,8 @@ const ProjectsSection = () => {
       icon: <Database className="w-6 h-6" />,
       color: "from-emerald-400 to-teal-500",
       category: "Full Stack",
+      github: "https://github.com/cephaz6/devtask-landing",
+      liveDemo: "https://devtask-landing.vercel.app/",
     },
     {
       id: 2,
@@ -36,6 +38,8 @@ const ProjectsSection = () => {
       icon: <Brain className="w-6 h-6" />,
       color: "from-purple-400 to-indigo-500",
       category: "Machine Learning",
+      github: "https://github.com/cephaz6/WelfareClaim-ML",
+      liveDemo: "#",
     },
     {
       id: 3,
@@ -48,6 +52,8 @@ const ProjectsSection = () => {
       icon: <Shield className="w-6 h-6" />,
       color: "from-blue-400 to-cyan-500",
       category: "FinTech",
+      github: "https://github.com/cephaz6/BethPay",
+      liveDemo: "https://mybethpay.com/",
     },
     {
       id: 4,
@@ -60,6 +66,8 @@ const ProjectsSection = () => {
       icon: <Leaf className="w-6 h-6" />,
       color: "from-green-400 to-emerald-500",
       category: "API Development",
+      github: "https://github.com/cephaz6/GreeenAware-API",
+      liveDemo: "#",
     },
   ];
 
@@ -136,18 +144,22 @@ const ProjectsSection = () => {
                   {/* Actions */}
                   <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-700">
                     <div className="flex space-x-6">
-                      <button className="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors group/btn">
-                        <Github size={18} />
-                        <span className="text-sm group-hover/btn:translate-x-1 transition-transform">
-                          Code
-                        </span>
-                      </button>
-                      <button className="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors group/btn">
-                        <ExternalLink size={18} />
-                        <span className="text-sm group-hover/btn:translate-x-1 transition-transform">
-                          Live Demo
-                        </span>
-                      </button>
+                      <a href={project.github}>
+                        <button className="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors group/btn">
+                          <Github size={18} />
+                          <span className="text-sm group-hover/btn:translate-x-1 transition-transform">
+                            Code
+                          </span>
+                        </button>
+                      </a>
+                      <a href={project.liveDemo}>
+                        <button className="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors group/btn">
+                          <ExternalLink size={18} />
+                          <span className="text-sm group-hover/btn:translate-x-1 transition-transform">
+                            Live Demo
+                          </span>
+                        </button>
+                      </a>
                     </div>
 
                     <button className="flex items-center space-x-2 text-emerald-400 hover:text-white transition-colors group/more">
