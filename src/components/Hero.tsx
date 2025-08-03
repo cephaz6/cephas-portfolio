@@ -130,24 +130,6 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* CTA Buttons */}
-              {/* <div className="flex flex-wrap gap-4">
-                <button className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 via-teal-600 to-cyan-600 text-black font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <span className="relative flex items-center space-x-2">
-                    <Eye size={20} />
-                    <span>View My Work</span>
-                  </span>
-                </button>
-
-                <button className="group relative px-8 py-4 bg-transparent border-2 border-emerald-500/50 text-emerald-400 font-bold rounded-2xl hover:bg-emerald-500/10 hover:border-emerald-400 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-                  <span className="flex items-center space-x-2">
-                    <Download size={20} />
-                    <span>Download CV</span>
-                  </span>
-                </button>
-              </div> */}
-
               {/* Social Links */}
               <div className="flex space-x-4">
                 {[
@@ -156,8 +138,16 @@ const HeroSection = () => {
                     href: "mailto:cephasblog@gmail.com",
                     color: "emerald",
                   },
-                  { icon: Github, href: "#", color: "teal" },
-                  { icon: LinkedinIcon, href: "#", color: "cyan" },
+                  {
+                    icon: Github,
+                    href: "https://github.com/cephaz6",
+                    color: "teal",
+                  },
+                  {
+                    icon: LinkedinIcon,
+                    href: "https://linkedin.com/in/cephaz6",
+                    color: "cyan",
+                  },
                 ].map(({ icon: Icon, href, color }, index) => (
                   <a
                     key={index}
