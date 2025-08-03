@@ -1,13 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  Download,
-  Menu,
-  X,
-  Code,
-  //   Terminal,
-  //   Rocket,
-  //   Sparkles,
-} from "lucide-react";
+import { Download, Menu, X, Code } from "lucide-react";
 
 // Navigation Component
 const Navigation = () => {

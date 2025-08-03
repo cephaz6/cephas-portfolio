@@ -1,12 +1,9 @@
 import {
   ArrowDown,
   Code,
-  Download,
-  Eye,
   Github,
   LinkedinIcon,
   Mail,
-  Rocket,
   Sparkles,
   Terminal,
 } from "lucide-react";
@@ -73,7 +70,7 @@ const HeroSection = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 pt-36">
               {/* Status Badge */}
               <div className="inline-flex items-center space-x-3 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 backdrop-blur-sm">
                 <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
@@ -103,44 +100,37 @@ const HeroSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4">
+                  {/* <div className="flex items-center space-x-4">
                     <Rocket className="text-teal-400 w-6 h-6" />
                     <div className="text-lg text-teal-400 font-medium">
                       Full Stack Developer & Co-Founder
                     </div>
-                  </div>
-
-                  {/* Dynamic Tech Display */}
-                  <div className="flex items-center space-x-4 mt-6">
-                    <Code className="text-cyan-400 w-6 h-6" />
-                    <div className="text-lg text-gray-300">
-                      Currently working with{" "}
-                      <span className="text-cyan-400 font-semibold transition-all duration-500">
-                        {technologies[currentTech]}
-                      </span>
-                    </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
               {/* Description */}
               <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-                Building{" "}
-                <span className="text-emerald-400 font-semibold">
-                  scalable digital solutions
-                </span>{" "}
-                with 4+ years of experience. MSc Software Engineering graduate
-                passionate about{" "}
-                <span className="text-teal-400 font-semibold">clean code</span>,
-                <span className="text-cyan-400 font-semibold">
-                  {" "}
-                  innovative architecture
-                </span>
-                , and solving complex problems.
+                Building scalable digital solutions with 4+ years of experience.
+                MSc Software Engineering graduate passionate about innovative
+                architecture, and solving complex problems.
               </p>
 
+              <div className="space-y-4">
+                {/* Dynamic Tech Display */}
+                <div className="flex items-center space-x-4 mt-6">
+                  <Code className="text-cyan-400 w-6 h-6" />
+                  <div className="text-lg text-gray-300">
+                    Currently working with{" "}
+                    <span className="text-cyan-400 font-semibold transition-all duration-500">
+                      {technologies[currentTech]}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
               {/* CTA Buttons */}
-              <div className="flex flex-wrap gap-4">
+              {/* <div className="flex flex-wrap gap-4">
                 <button className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 via-teal-600 to-cyan-600 text-black font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative flex items-center space-x-2">
@@ -155,7 +145,7 @@ const HeroSection = () => {
                     <span>Download CV</span>
                   </span>
                 </button>
-              </div>
+              </div> */}
 
               {/* Social Links */}
               <div className="flex space-x-4">
@@ -185,7 +175,7 @@ const HeroSection = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-800/50">
+              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-800/50 pb-4">
                 {[
                   { number: "4+", label: "Years Experience", color: "emerald" },
                   { number: "50+", label: "Projects Built", color: "teal" },

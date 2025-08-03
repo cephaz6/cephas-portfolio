@@ -4,6 +4,7 @@ import ContactSection from "./components/contactSection";
 import HeroSection from "./components/Hero";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/SkillsSection";
+import Navigation from "./components/Navigation";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,6 +20,7 @@ function App() {
         isLoaded ? "opacity-100" : "opacity-0"
       }`}
     >
+      <Navigation />
       <main className="w-full">
         <section id="home" className="w-full">
           <HeroSection />
