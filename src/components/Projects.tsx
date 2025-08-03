@@ -190,39 +190,6 @@ const ProjectsSection = () => {
               </span>
             </button>
           </div>
-
-          {/* Project Statistics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-gray-700">
-            {[
-              {
-                number: "15+",
-                label: "Projects Completed",
-                color: "text-emerald-400",
-              },
-              {
-                number: "4+",
-                label: "Years Experience",
-                color: "text-teal-400",
-              },
-              {
-                number: "100%",
-                label: "Client Satisfaction",
-                color: "text-blue-400",
-              },
-              {
-                number: "22%",
-                label: "Growth Achieved",
-                color: "text-green-400",
-              },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className={`text-4xl font-bold ${stat.color} mb-2`}>
-                  {stat.number}
-                </div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
