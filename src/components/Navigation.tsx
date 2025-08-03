@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import {
-  //   ArrowDown,
-  Github,
-  Linkedin,
-  //   Mail,
   Download,
-  //   Eye,
   Menu,
   X,
   Code,

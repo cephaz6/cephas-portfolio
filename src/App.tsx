@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/contactSection";
 import HeroSection from "./components/Hero";
-// import Navigation from "./components/Navigation";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/SkillsSection";
 
@@ -16,31 +15,37 @@ function App() {
 
   return (
     <div
-      className={`font-base w-full min-h-screen transition-opacity duration-1000 ${
+      className={`font-base w-full min-h-screen overflow-x-hidden transition-opacity duration-1000 ${
         isLoaded ? "opacity-100" : "opacity-0"
       }`}
     >
-      {/* <Navigation /> */}
-
       <main className="w-full">
         <section id="home" className="w-full">
           <HeroSection />
         </section>
 
         <section id="about" className="w-full scroll-mt-20">
-          <AboutSection />
+          <div className="">
+            <AboutSection />
+          </div>
         </section>
 
         <section id="skills" className="w-full scroll-mt-20">
-          <SkillsSection />
+          <div className="">
+            <SkillsSection />
+          </div>
         </section>
 
         <section id="projects" className="w-full scroll-mt-20">
-          <ProjectsSection />
+          <div className="">
+            <ProjectsSection />
+          </div>
         </section>
 
         <section id="contact" className="w-full scroll-mt-20">
-          <ContactSection />
+          <div className="">
+            <ContactSection />
+          </div>
         </section>
       </main>
 
@@ -50,7 +55,7 @@ function App() {
             className="absolute inset-0"
             style={{
               backgroundImage: `linear-gradient(45deg, rgba(16, 185, 129, 0.1) 25%, transparent 25%), 
-                             linear-gradient(-45deg, rgba(16, 185, 129, 0.1) 25%, transparent 25%)`,
+                                 linear-gradient(-45deg, rgba(16, 185, 129, 0.1) 25%, transparent 25%)`,
               backgroundSize: "40px 40px",
             }}
           ></div>
